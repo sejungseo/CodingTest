@@ -1,7 +1,4 @@
 function solution(strlist) {
-    const answer = [];
-    for (let i = 0; i < strlist.length; i++) {
-        answer.push(strlist[i].length);
-    }
+    const answer = strlist.map(i => i.length);
     return answer;
 }
