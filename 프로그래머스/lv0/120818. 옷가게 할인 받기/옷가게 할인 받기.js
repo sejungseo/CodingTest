@@ -6,7 +6,5 @@ function solution(price) {
         return ~~(price * 0.9);
     } if (price >= 100000) {
         return ~~(price * 0.95);
-    } if (price < 100000) {
-        return price;
-    }
+    } return price;
 }
