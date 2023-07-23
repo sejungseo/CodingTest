@@ -1,3 +1,7 @@
 function solution(strlist) {
-    return answer = strlist.map(i => i.length);
+    var answer = [];
+    for (let i = 0; i < strlist.length; i++) {
+        answer.push(strlist[i].length);
+    }
+    return answer;
 }
