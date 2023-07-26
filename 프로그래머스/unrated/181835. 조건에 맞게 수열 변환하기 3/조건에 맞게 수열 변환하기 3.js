@@ -3,7 +3,7 @@ function solution(arr, k) {
     for (i = 0; i < arr.length; i++) {
         if (k % 2 !== 0) {
             answer.push(arr[i] * k);
-        } if (k % 2 === 0) {
+        } else {
             answer.push(arr[i] + k);
         }
     }
