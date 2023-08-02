@@ -1,13 +1,13 @@
 function solution(n, control) {
     var answer = n;
     for(i = 0; i < control.length; i++) {
-        if (control[i] == "w") {
+        if (control[i] === "w") {
             answer += 1;
-        } if (control[i] == "s") {
+        } if (control[i] === "s") {
             answer -= 1;
-        } if (control[i] == "d") {
+        } if (control[i] === "d") {
             answer += 10;
-        } if (control[i] == "a") {
+        } if (control[i] === "a") {
             answer -= 10;
         }
     }
