@@ -4,10 +4,9 @@ function solution(numbers, direction) {
     if(direction === "right") {
         numbers.pop();
         numbers.unshift(lastnum);
-        return numbers;
     } else {
         numbers.shift();
         numbers.push(firstnum);
-        return numbers;
     }
+    return numbers;
 }
