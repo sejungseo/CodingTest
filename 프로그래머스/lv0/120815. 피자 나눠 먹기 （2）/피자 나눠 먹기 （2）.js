@@ -1,4 +1,3 @@
-
 function solution(n) {
     let answer = 0;
     for(let i = Math.max(n, 6); i <= n * 6; i++){
