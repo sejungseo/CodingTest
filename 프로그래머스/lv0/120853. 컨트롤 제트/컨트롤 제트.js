@@ -1,12 +1,12 @@
 function solution(s) {
     let answer = 0;
-    let num = s.split(" ");
+    let arr = s.split(" ");
     
-    for(let i = 0; i < num.length; i++){
-        if(num[i] === "Z") {
-            answer -= Number(num[i-1]);
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] === "Z") {
+            answer -= Number(arr[i-1]);
         } else {
-            answer += Number(num[i])
+            answer += Number(arr[i])
         }
     }
     return answer;
