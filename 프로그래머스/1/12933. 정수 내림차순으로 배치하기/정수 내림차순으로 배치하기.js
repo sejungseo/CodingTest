@@ -1,4 +1,3 @@
 function solution(n) {
-    let letter = String(n).split('').sort((a, b) => b - a).join('');
-    return parseInt(letter);
+    return parseInt(String(n).split('').sort((a, b) => b - a).join(''));
 }
