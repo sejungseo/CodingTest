@@ -4,8 +4,7 @@ function solution(str_list) {
             return str_list.slice(0, i);
         } else if(str_list[i] === "r") {
             return str_list.slice(i + 1);
-        } else if(!str_list.includes("l" || "r")){
-            return [];
         }
     }
+    return [];
 }
