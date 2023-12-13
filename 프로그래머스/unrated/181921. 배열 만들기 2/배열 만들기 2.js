@@ -9,3 +9,5 @@ function solution(l, r) {
     }
     return answer.length > 0 ? answer : [-1];
 }
+
+// every(): 배열의 모든 요소가 제공된 함수로 구현된 테스트를 통과하는지 테스트 함. 불리언 값 반환
