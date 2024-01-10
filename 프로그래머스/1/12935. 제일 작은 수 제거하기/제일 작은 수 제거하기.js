@@ -1,5 +1,6 @@
 function solution(arr) {
-  let answer = [];
-  answer = arr.filter(num => num > Math.min(...arr));
-  return answer.length ? answer : [-1];
+    let answer = [];
+    const min = Math.min(...arr); 
+    answer = arr.filter(num => num > min);
+    return answer.length ? answer : [-1];
 }
