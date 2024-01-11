@@ -1,5 +1,4 @@
 function solution(s) {
-    let mid = s[Math.floor(s.length / 2)];
-    let beforeMid = s[Math.floor(s.length / 2) - 1];
-    return s.length % 2 === 0 ? beforeMid + mid : mid;
+    let mid = Math.floor(s.length / 2);
+    return s.length % 2 === 0 ? s[mid - 1] + s[mid] : s[mid];
 }
