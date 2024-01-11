@@ -1,6 +1,5 @@
 function solution(s) {
-    let arr = s.split('');
-    return arr.length % 2 
-        ? arr.splice(parseInt(arr.length / 2), 1).join('') 
-        : arr.splice(parseInt(arr.length / 2) -1, 2).join('') ;
+    let mid = s[Math.floor(s.length / 2)];
+    let beforeMid = s[Math.floor(s.length / 2) - 1];
+    return s.length % 2 === 0 ? beforeMid + mid : mid;
 }
