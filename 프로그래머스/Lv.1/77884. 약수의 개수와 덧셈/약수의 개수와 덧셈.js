@@ -1,17 +1,13 @@
-function countDivision(num) { // 약수의 개수 구하는 함수
-    let sum = 0;
-    
-    for(let i = 0; i <= num; i++) {
-        if(num % i === 0) sum += 1;
-    }
-    return sum;
-}
-
-function solution(left, right) { // 약수의 개수 조건에 따라 계산하는 함수
-    let answer = 0;
+function solution(left, right) {
+    let answer = 0; 
     
     for(let i = left; i <= right; i++) {
-        countDivision(i) % 2 === 0 ? answer += i : answer -= i;
+        let count = 0; // 약수의 개수
+        for(let j = 1; j <= i; j++) { // 약수 구하는 식
+            if(i % j === 0) count++;
+        }
+        if(count % 2 === 0) answer += i; // 약수의 개수가 짝수면 더하고
+        else answer -= i; // 약수의 개수가 홀수면 빼기
     }
     return answer;
 }
