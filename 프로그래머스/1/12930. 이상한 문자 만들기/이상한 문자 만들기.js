@@ -1,7 +1,9 @@
 function solution(s) {
-    return s.split(' ').map(v => {
-        return v.split('').map((char, idx) => {
-            return idx % 2 === 0 ? char.toUpperCase() : char.toLowerCase();
-        }).join('');
-    }).join(' ');
+    let sArr = s.split(' ');
+    
+    return sArr.map(word => 
+        word.split('').map((char, i) => 
+            i % 2 === 0 ? char.toUpperCase() : char.toLowerCase()
+        ).join('')
+    ).join(' ')
 }
