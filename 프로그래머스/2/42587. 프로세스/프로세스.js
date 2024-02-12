@@ -3,7 +3,7 @@ function solution(priorities, location) {
     let queue = priorities.map((priority, index) => ({index, priority})); 
     let order = 0; // 프로세스가 실행되는 순서
     
-    while(queue.length) {
+    while(queue.length > 0) {
         let current = queue.shift();
         // 현재 프로세스보다 우선순위가 높은 프로세스가 대기열에 있는지 확인
         if(queue.some(process => process.priority > current.priority)) {
